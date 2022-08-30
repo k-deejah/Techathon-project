@@ -70,6 +70,7 @@ body{
 }
 .second-section-container img{
     width: 100%;
+    border-radius: 5px;
 }
 
 .donation-selection{
@@ -81,6 +82,7 @@ body{
     font-family: var(--heading-font);
     font-size: 1.2rem;
     border: none;
+    margin-right: 10px;
 }
 .material-button{
     background-color: var(--bg-color);
@@ -123,8 +125,9 @@ form input{
     background-color: var(--bg-color);
 }
   input [type="radio"]:checked{
-        border: none;
-        outline:2px solid #0B55F4;
+         letter-spacing: 0.5px;
+        border:2px solid var(--primary-color) ;
+        outline: 2px solid var(--primary-color);
     
     }
     select{
@@ -135,6 +138,7 @@ form input{
 .name, .email, .amount, .country,.zip-codes{
     display: grid;
     gap: 5px;
+    margin-bottom: 20px;
 }
 
 .name-inputs, .country-inputs,
@@ -142,13 +146,24 @@ form input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    background-color: var(--bg-color);
 }
 .radio-input input{
     width: 1rem;
+    
 }
 .radio-button{
     display: flex;
     justify-content: space-between;
+    
+}
+.card,.flutterwave,.paystack{ 
+  width: 72px;
+height: 22px;
+font-size: 16px;
+line-height: 22px;
+
+
 }
 .radio-input{
     display: flex;
