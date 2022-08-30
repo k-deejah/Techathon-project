@@ -1,47 +1,122 @@
-
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=ng">
       <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-      <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
      <link rel="preconnect"href="https://fonts.gstatic.com">
-     <link rel="preconnect"href="https://fonts.googleapis.com"> 
+    <link rel="preconnect"href="https://fonts.googleapis.com"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
             <title>CrowdHearts|Donation page</title>   
 </head>
 <body>
-    <div class="first-image">
-        <img src="./images/Rectangle 114 (1).svg" alt="first-image">
+    <div class="first-section">
+        <div class="all-container">
+            <div class="first-text">
+                <h1>Help people who are in need</h1>
+                <p>It is not how much we give but how much love we put into giving.</p>
+            </div>
+        </div>
     </div>
-          <div class="container">
-            <div class="messages">
-<h3 >Millions of people find it hard to cater for themselves</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est ultrices nullam luctus tellus ut imperdiet
-   tristique. Vulputate nascetur vulputate sed sed elementum. Urna, commodo, lobortis elementum
-   pellentesque. Purus tellus in tortor rutrum eget. Ipsum urna, est, risus ultricies libero. Tincidunt at
-   ac convallis arcu nunc fringilla massa fusce adipiscing. Sed hac pellentesque facilisi mi felis ornare
-   mauris. Suspendisse eget malesuada sit nunc, velit, sed enim nam. Est porta mauris faucibus morbi nibh
-   nam duis nec.</p> 
+    <div class="second-section">
+        <div class="all-container">
+            <div class="second-section-container">
+                <div class="second-text">
+                    <h2>Millions of people find it hard to cater for themselves</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est ultrices nullam luctus tellus ut imperdiet
+                        tristique. Vulputate nascetur vulputate sed sed elementum. Urna, commodo, lobortis elementum
+                        pellentesque. Purus tellus in tortor rutrum eget. Ipsum urna, est, risus ultricies libero. Tincidunt at
+                        ac convallis arcu nunc fringilla massa fusce adipiscing. Sed hac pellentesque facilisi mi felis ornare
+                        mauris. Suspendisse eget malesuada sit nunc, velit, sed enim nam. Est porta mauris faucibus morbi nibh
+                        nam duis nec.</p>
+                </div>
+                <div class="second-image">
+                    <img src="./images/unsplash_AEaTUnvneik.png" alt="">
+                </div>
             </div>
-            <div class="picture">
-                 <img src="./images/Frame 91.svg"alt="frame">
+        </div>
+    </div>
+    
+    <div class="donation-section">
+        <div class="all-container">
+            <div class="donation-panel">
+                <div class="donation-selection">
+                    <a href="#"><button class="cash-button">
+                        Cash
+                    </button></a>
+                    <a href="#"><button class="material-button">
+                        Material
+                    </button></a>
+                </div>
+                <form action="">
+                    <div class="name-inputs">
+                        <div class="name">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" class="inwidth">
+                        </div>
+                        <div class="name">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" class="inwidth">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class=" amount">
+                        <label for="amount">Donation Amount</label>
+                        <input type="number">
+                    </div>
+                    <div class="country-inputs">
+                        <div class="country">
+                            <label for="country">country</label>
+                            <input type="text">
+                        </div>
+                        <div class="country">
+                            <label for="city">City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="country-code">
+                        <div class="zip-codes">
+                            <label for="state">State / Province</label>
+                            <input type="text">
+                        </div>
+                        <div class="zip-codes">
+                            <label for="">Zip / Postal code</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="payment-option">
+                        <label for="for">Payment</label>
+                        <div class="radio-button">
+                            <div class="radio-input">
+                                <input type="radio">
+                                <label for="card">Card</label>
+                            </div>
+                            <div class="radio-input">
+                                <input type="radio">
+                                <label for="card">Card</label>
+                            </div>
+                            <div class="radio-input">
+                                <input type="radio">
+                                <label for="card">Card</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
 
             </div>
-           
-          </div>
-
+        </div>
+    </div>
       
         
-    
+<!--     
     <div class="donation">
 <div class="cash">
     <a href="#">Cash</a>
@@ -109,8 +184,7 @@
 </div></div>
 
 
-        </form>
-
+        </form> --> 
     
 </body>
 </html>
