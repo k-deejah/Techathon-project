@@ -89,7 +89,8 @@ body{
     font-family: var(--heading-font);
     font-size: 1.2rem;
 }
-
+.donation-selection a:active{
+    background-color: #0B55F4;}
 .donation-selection button{
     padding: 10px 100px;
     cursor: pointer;
@@ -121,10 +122,21 @@ form input{
     border-radius: 8px;
     background-color: var(--bg-color);
 }
+  input [type="radio"]:checked{
+        border: none;
+        outline:2px solid #0B55F4;
+    
+    }
+    select{
+        font-size: 0.9rem;
+        padding: 2px 5px;
+   
+}
 .name, .email, .amount, .country,.zip-codes{
     display: grid;
     gap: 5px;
 }
+
 .name-inputs, .country-inputs,
 .country-code{
     display: grid;
