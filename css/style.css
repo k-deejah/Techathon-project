@@ -262,6 +262,9 @@ form input{
 .donation-panel{
     padding: 1rem;
 }
+.radio-button{
+    justify-content: space-between;
+}
 
 }/*.card{
 
