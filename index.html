@@ -44,13 +44,13 @@
     <div class="donation-section">
         <div class="all-container">
             <div class="donation-panel">
-                <div class="donation-selection">
-                    <a href="#"><button class="cash-button">
-                        Cash
-                    </button></a>
-                    <a href="#"><button class="material-button">
-                        Material
-                    </button></a>
+                <div class="donation">
+                 <div class="cash"  >
+                    <a href="#">Cash</a>
+                  </div>
+              <div class="material" >
+                <a href="#"> Material</a>
+            </div>
                 </div>
                 <form action="">
                     <div class="name-inputs">
@@ -99,21 +99,22 @@
                     </div>
                     <div class="payment-option">
                         <label for="for">Payment</label>
-                        <div class="radio-button">
-                            <div class="radio-input">
-                                <input type="radio"class="card">
-                                <label for="card">Card</label>
-                            </div>
-                            <div class="radio-input">
-                                <input type="radio" class="flutterwave">
-                                <label for="card">Flutterwave</label>
-                            </div>
-                            <div class="radio-input">
-                                <input type="radio" class="paystack">
-                                <label for="card">Paystack</label>
-                            </div>
-
+                    </div>
+                       <div class="radio-button">
+                
+                            
+                            <label for ="card">Card</label> <input type="radio"id="card"name="donation">
+                                
+                                <label for="flutterwave">Flutterwave</label>
+                                <input type="radio"id="Flutterwave"name="donation">
+                                
+                                <label type="paystack">Paystack</label>
+                                <input type="radio" id="paystack"name="donation">
+                                
+                            
                         </div>
+
+                        
                     </div>
                 </form>
 
@@ -180,13 +181,7 @@
         <label for="donating" name="landing">Payment</label>
      </div><br>
  <div class="hii"> 
-     <input type="radio"id="card"name="donation">
-<label for ="card">Card</label>
-<input type="radio"id="Flutterwave"name="donation">
-
-<label for="flutterwave">Flutterwave</label>
-<input type="radio" id="paystack"name="donation">
-<label type="paystack">Paystack</label>
+    
 </div></div>
 
 

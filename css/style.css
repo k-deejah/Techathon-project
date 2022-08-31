@@ -26,7 +26,7 @@
 .all-container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 6rem;
 }
 
 body{
@@ -47,16 +47,19 @@ body{
     color: #F3870A;
     font-size: 3rem;
     max-width: 600px;
+    margin-right: 5px;
 
 }
 .first-text p{
     font-size: 20px;
     max-width: 600px;
+    margin-right: 5px;
 }
 .second-section-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 24px;
     gap: 2rem;
     margin-top: 3rem;
     
@@ -71,40 +74,63 @@ body{
 .second-section-container img{
     width: 100%;
     border-radius: 5px;
+
+
 }
 
-.donation-selection{
-    margin: 0 auto;
+    
+
+
+.donation a {
+    text-decoration: none;
+    border: 1.5px solid #0B55F4;
+    
+    padding: 5px 102px;
+    border-radius: 2px;
 }
-.cash-button{
+.material a:active{
+    color: #001DC0;
     background-color: var(--primary-color);
-    color: var(--white);
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    border: none;
-    margin-right: 10px;
 }
-.material-button{
-    background-color: var(--bg-color);
-    border: 1px solid var(--primary-color);
+.cash a:active{
     color: var(--primary-color);
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
+    background-color: var(--white);
+    
 }
-.donation-selection a:active{
-    background-color: #0B55F4;}
-.donation-selection button{
-    padding: 10px 100px;
-    cursor: pointer;
-    text-align: center;
-    margin: 0 auto;
-    display: inline-block;
+.cash a{
+    background-color: #0B55F4;
+}
+    
+.donation{
+    display: flex;
+    flex-direction: row;
 
+justify-content: center;
+   align-items: center;
+   width: 100px;
+   height: 30px;
+   margin: auto;
+padding: 10px;
+
+
+   
 }
+
+    
+ .radio-button{
+    display: flex;
+    
+    
+ }
+  
+
+
 .donation-panel{
+    text-decoration: none;
     max-width: 60%;
     margin: 0 auto;
-    padding: 4rem;
+   
+
 }
 form{
     display: grid;
@@ -123,11 +149,7 @@ form input{
     border: 1px solid var(--black);
     border-radius: 8px;
     background-color: var(--bg-color);
-}
-  input [type="radio"]:checked{
-         letter-spacing: 0.5px;
-        border:2px solid var(--primary-color) ;
-        outline: 2px solid var(--primary-color);
+
     
     }
     select{
@@ -147,28 +169,10 @@ form input{
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     background-color: var(--bg-color);
-}
-.radio-input input{
-    width: 1rem;
-    
-}
-.radio-button{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.card,.flutterwave,.paystack{ 
-  width: 72px;
-height: 22px;
-font-size: 16px;
-line-height: 22px;
 
+}input [type="radio"]:checked{
+    color: #001DC0;}
 
-}
-.radio-input{
-    display: flex;
-    gap: 2px;
-}
 
 @media(max-width:1129px){
     .donation-panel{
@@ -252,16 +256,65 @@ line-height: 22px;
 .country-code{
     display: block;
 }
-.donation-selection button{
+.donation{
     padding: 6px 50px;
 }
 .donation-panel{
     padding: 1rem;
 }
 
-}
+}/*.card{
 
- /*
+    width: 72px;
+    height: 22px;
+    
+    font-size: 16px;
+    line-height: 22px;
+    
+    letter-spacing: 0.5px;
+    
+    
+    color: #333535;
+    
+    
+    border: 2px solid #0B55F4;input [type="radio"]:checked{
+         letter-spacing: 0.5px;
+        border:none ;
+        outline: 2px solid var(--primary-color);
+    
+    
+    }
+    .Flutterwave{
+    
+    width: 72px;
+    height: 22px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #333535;
+    
+    .radio-input{
+    display: flex;
+    gap: 2px;
+    
+    border: 2px solid #0B55F4;}
+    
+    
+    
+    
+    .paystack{
+    
+    width: 72px;
+    height: 22px;
+    
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #333535;
+    }
+    
+
+/*
 .first-image{
     width: 1440px;
     height: 544px;
@@ -295,38 +348,6 @@ line-height: 22px;
     width: 569px;
     height: 176px;
 
-}
-.donation{
-    display: flex;
-    flex-direction: row;
-
-justify-content: center;
-   align-items: center;
-   width: 342px;
-   height: 49px;
-   margin: auto;
-padding: 10px;
-
-
-   
-}
-
-.donation a {
-    text-decoration: none;
-    border: 1.5px solid;
-    border-color: #0B55F4;
-    padding: 5px 102px;
-    border-radius: 2px;
-}
-
-.cash a{
-    color: #F8F8F8;
-    background-color: #0B55F4;
-}
-
-.material a:active {
-color: #F8F8F8;
-background-color: #0B55F4;
 }
 
 .form {
@@ -594,50 +615,6 @@ gap: 10px;
 
 
 
-#card{
-
-width: 72px;
-height: 22px;
-
-font-size: 16px;
-line-height: 22px;
-
-letter-spacing: 0.5px;
-
-
-color: #333535;
-
-
-border: 2px solid #0B55F4;
-
-}
-#Flutterwave{
-
-width: 72px;
-height: 22px;
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.5px;
-color: #333535;
-
-
-
-border: 2px solid #0B55F4;
-
-
-}
-
-
-#paystack{
-
-width: 72px;
-height: 22px;
-
-font-size: 16px;
-line-height: 22px;
-letter-spacing: 0.5px;
-color: #333535;
-}
 
 
 
