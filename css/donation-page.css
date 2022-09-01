@@ -29,14 +29,8 @@
     padding: 6rem;
 }
 
-body{
-    background-color:var(--bg-color);
-    font-family: 'Open Sans', sans-serif;
-}
-
 .first-section{
-    background-image: linear-gradient( rgba(0, 29, 192, 0.25),rgba(0, 29, 192, 0.25)), url(../images/unsplash_8ldqRkOk5oo.png);
-    background-size: cover;
+    background-image: linear-gradient( rgba(0, 29, 192, 0.25),rgba(0, 29, 192, 0.25)), url(../images/student.png);  background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10rem;
@@ -47,13 +41,13 @@ body{
     color: #F3870A;
     font-size: 3rem;
     max-width: 600px;
-    margin-right: 5px;
+    
 
 }
 .first-text p{
     font-size: 20px;
     max-width: 600px;
-    margin-right: 5px;
+    
 }
 .second-section-container{
     display: flex;
@@ -99,8 +93,16 @@ body{
 }
 .cash a{
     background-color: #0B55F4;
+    color: var(--bg-color);
 }
-    
+.donation-panel{
+max-width: 60%;
+margin: 0 auto;
+padding: 4rem;
+}
+    .donation{
+        margin:0 auto;
+    }
 .donation{
     display: flex;
     flex-direction: row;
@@ -122,13 +124,15 @@ padding: 10px;
     justify-content: space-between;
     
  }
-  
+  .radio-input{
+    display: flex;
+    gap: 15px;
+  }
 
 
 .donation-panel{
     text-decoration: none;
-    max-width: 60%;
-    margin: 0 auto;
+    
    
 
 }
@@ -155,6 +159,7 @@ form input{
     select{
         font-size: 0.9rem;
         padding: 2px 5px;
+        
    
 }
 .name, .email, .amount, .country,.zip-codes{
@@ -247,8 +252,12 @@ form input{
 }
 
 @media(max-width:428px){
+    
+    
     .first-section{
         padding: 3rem;
+
+
     }
 
     
@@ -256,8 +265,9 @@ form input{
 .country-code{
     display: block;
 }
-.donation{
+.donation a{
     padding: 6px 50px;
+    display: flex;
 }
 .donation-panel{
     padding: 1rem;
@@ -265,6 +275,7 @@ form input{
 .radio-button{
     justify-content: space-between;
 }
+
 
 }/*.card{
 
